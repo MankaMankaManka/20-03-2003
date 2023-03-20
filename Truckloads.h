@@ -1,5 +1,8 @@
 
 #include <iostream>
+#ifndef TRUCKLOADS_H  /* Include guard */
+#define TRUCKLOADS_H
+
 
 class Truckloads {       // The class
   public:             // Access specifier
@@ -8,3 +11,5 @@ class Truckloads {       // The class
     int numTrucks(int numCrates, int loadSize);
     int cratePiles=1;
 };
+
+#endif
