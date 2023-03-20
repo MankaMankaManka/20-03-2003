@@ -11,3 +11,13 @@ int Reverser::reverseDigit(int value)
     }
     return rev_num;
 }
+
+std::string Reverser::reverseString(std::string characters)
+{
+	if (newString.length()<characters.length()){
+		stringLocation= characters.length()-newString.length()-1;
+		newString= newString+characters[stringLocation];
+		return reverseString(characters);
+	}
+	return newString;
+}
