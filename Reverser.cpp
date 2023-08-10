@@ -11,8 +11,10 @@ int Reverser::reverseDigit(int value)
     }
 	if (value <0){
 		return -1;
-	}
-    return newNum;
+}
+	int returnint=newNum;
+	newNum=0;
+    return returnint;
 }
 
 std::string Reverser::reverseString(std::string characters)
