@@ -1,21 +1,23 @@
 #include <iostream>
 #include "Reverser.h"
+#include <cmath>
 
 int Reverser::reverseDigit(int value)
 {
-    //int rev_num = 0;
     if (value > 0) {
-        newNum = newNum*10 + value % 10;
-        value = value/10;
-		return reverseDigit(value);
+        int num=value % 10;
+        //value =12345 logvalue=4 50000
+        for (int i=0; i<log10(value)-1; i++){
+            num=num*10;
+        }
+		return reverseDigit(value/10) + num;
     }
 	if (value <0){
 		return -1;
+	}
+    return 0;
 }
-	int returnint=newNum;
-	newNum=0;
-    return returnint;
-}
+
 
 std::string Reverser::reverseString(std::string characters)
 {
