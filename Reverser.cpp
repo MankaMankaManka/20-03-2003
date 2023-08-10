@@ -24,3 +24,7 @@ std::string Reverser::reverseString(std::string characters)
 	}
 	return newString;
 }
+
+Reverser::Reverser(){
+    
+};
