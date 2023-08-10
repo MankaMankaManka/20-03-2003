@@ -1,4 +1,4 @@
-
+/*
 #include <iostream>
 
 class Truckloads {       // The class
@@ -26,3 +26,5 @@ int main()
     std::cout<< example.numTrucks(1024,5);
     return 0;
 }
+
+*/
