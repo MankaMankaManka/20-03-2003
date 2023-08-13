@@ -27,7 +27,7 @@ std::string Reverser::reverseString(std::string characters)
 		return reverseString(characters);
 	}
 	std::string theString = newString;
-	newString=0;
+	newString="";
 	return theString;
 }
 
