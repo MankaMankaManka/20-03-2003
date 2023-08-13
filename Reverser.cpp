@@ -26,7 +26,9 @@ std::string Reverser::reverseString(std::string characters)
 		newString= newString+characters[stringLocation];
 		return reverseString(characters);
 	}
-	return newString;
+	std::string theString = newString;
+	newString=0;
+	return theString;
 }
 
 Reverser::Reverser(){
